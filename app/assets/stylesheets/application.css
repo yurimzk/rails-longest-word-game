@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+.heading-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.list-letter-grid {
+  padding: 20px 0;
+}
+
+.div-letter-list {
+  display: inline;
+  background-color: rgb(47, 108, 250);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding: 20px;
+  margin: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 4px 2px 2px rgb(120, 120, 120);
+}
+
+.letter-grid {
+  display: inline;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.btn-play:hover {
+  color: rgb(47, 108, 250);
+}

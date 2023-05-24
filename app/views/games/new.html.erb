@@ -1,0 +1,19 @@
+<div class="heading-container">
+  <h1 class="game-heading">New game</h1>
+</div>
+
+<div class="container">
+  <ul class="list-letter-grid">
+    <% @letters.each do |letter| %>
+      <div class="div-letter-list"><li class="letter-grid"><%= letter.upcase %></li></div>
+      <% end %>
+  </ul>
+</div>
+
+<div class="form">
+  <form action="/score" method="get" data-turbo="false">
+    <input type="text" id="word" name="word" value="<%= params[:word] %>" placeholder="Type the longest word">
+    <input class="btn-play" type="submit" value="Play">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  </form>
+</div>
